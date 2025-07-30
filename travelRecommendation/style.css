@@ -307,11 +307,11 @@ li {
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the left for text readability */
     margin-bottom: 20px;
-    max-width: 700px; /* Width matching the image */
+    max-width: 300px; /* Width matching the image */
 }
 
 .recommendation-item img {
-    width: 700px; /* 3x larger image size */
+    width: 300px; /* 3x larger image size */
     border-radius: 8px;
     margin-right: auto; /* Align image to the right within its container */
 }

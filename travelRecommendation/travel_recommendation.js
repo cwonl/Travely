@@ -12,8 +12,10 @@ fetch('travel_recommendation_api.json')
     .then(data => {
         travelData = data; // Store fetched data for later use in search
         console.log(data); // Log the data to check if it's fetched correctly
-        // Check for search query once data is fetched
-        checkForSearchQuery();
+        // Only check for search query if there is one in the URL
+        if (window.location.pathname.includes('travel_recommendation.html')) {
+            checkForSearchQuery();
+        }
     })
     .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
@@ -108,14 +110,8 @@ function checkForSearchQuery() {
     }
 }
 
-// Run the search query check if on home page
-if (window.location.pathname.includes('travel_recommendation.html')) {
-    // Trigger search logic after data is fetched
-    fetch('travel_recommendation_api.json')
-        .then(response => response.json())
-        .then(data => {
-            travelData = data;
-            checkForSearchQuery();
-        })
-        .catch(error => console.error(error));
-}
+// Ensure the recommendations container is hidden by default
+document.addEventListener('DOMContentLoaded', function() {
+    const recommendationsContainer = document.querySelector('.recommendations');
+    recommendationsContainer.style.display = 'none';
+});
