@@ -1,0 +1,336 @@
+/* Basic styling for the body and elements */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/04/06/10/skyline-831046_1280.jpg'); /* Use a suitable background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure the background fills the entire viewport */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Section styling */
+.home-section, .about-section {
+    padding-top: 60px; /* Offset for fixed navbar */
+    margin: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #555;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/04/06/10/skyline-831046_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #555;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-btn {
+    background-color: #555;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #000000;
+}
+
+.clear-btn {
+    background-color: #555;
+    color: white;
+    margin-left: 5px;
+}
+
+.clear-btn:hover {
+    background-color: #000000;
+}
+
+
+/* Introduction styling for Home page */
+.introduction {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.introduction h1 {
+    font-size: 5em; /* Large heading for emphasis */
+}
+
+.introduction p {
+    font-size: 1.2em; /* Slightly larger paragraph text */
+}
+
+/* Social media icons styling */
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* Company information styling for About Us page */
+.company-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.company-info h1 {
+    font-size: 3em; /* 3x larger */
+    color: #ffffff; /* No background */
+    margin-bottom: 20px;
+}
+
+.company-info p {
+    background-color: rgba(0, 0, 0, 0.6); /* Similar background to home intro */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    color: white; /* Ensure text is readable */
+}
+
+/* Team Introduction styling */
+.team-introduction {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-introduction h2 {
+    font-size: 3em; /* 3x larger */
+    color: #ffffff; /* No background */
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    max-width: 600px;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.6); /* Background for names and roles */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: white; /* Ensure text is readable */
+    text-align: center;
+}
+
+.contact-section {
+    padding-top: 80px; /* Offset for fixed navbar */
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+.contact-section h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #000;
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    padding: 20px;
+}
+
+.recommendation-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left for text readability */
+    margin-bottom: 20px;
+    max-width: 700px; /* Width matching the image */
+}
+
+.recommendation-item img {
+    width: 700px; /* 3x larger image size */
+    border-radius: 8px;
+    margin-right: auto; /* Align image to the right within its container */
+}
+
+.recommendation-item div { /* Container for description */
+    background-color: rgba(0, 0, 0, 0.6); /* Background for description */
+    padding: 10px;
+    border-radius: 8px;
+    color: white; /* Ensure text is readable */
+    width: 100%; /* Match width to image */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.recommendation-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.recommendation-item p {
+    margin: 0;
+    font-size: 1em;
+}

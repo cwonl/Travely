@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travely - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div>
+            <a href="#home">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <form class="search-form" action="#" method="get">
+            <input type="text" name="search" placeholder="Search recommendations..." required>
+            <input type="submit" value="Search" class="btn search-btn">
+            <input type="reset" value="Clear" class="btn clear-btn">
+        </form>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="home-section">
+        <div class="introduction">
+            <h1>Welcome to Travely</h1>
+            <p>Your ultimate guide to discovering the most amazing travel destinations around the world. Whether you’re planning a weekend getaway or a long vacation, Travely provides you with personalized recommendations and insights to make your journey unforgettable.</p>
+        </div>
+
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="recommendations"></div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
